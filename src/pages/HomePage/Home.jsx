@@ -1,10 +1,11 @@
+import CartOverlay from '../../components/Cart/CartOverlay';
 import MainSection from './MainSection';
 
 const Home = () => {
   return (
     <div>
+      <CartOverlay />
       <MainSection />
-      <h1>carregou</h1>
     </div>
   );
 };
