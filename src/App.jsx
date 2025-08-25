@@ -8,8 +8,9 @@ import { CartContext } from './contexts/CartContext';
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [cartItems, setCartItems] = useState({});
   return (
-    <CartContext.Provider value={{ isCartOpen, setIsCartOpen }}>
+    <CartContext.Provider value={{ isCartOpen, setIsCartOpen, cartItems, setCartItems }}>
       <Header />
 
       <Routes>
